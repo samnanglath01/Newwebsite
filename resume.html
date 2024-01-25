@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-pink-100">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6 bg-pink-300">
+        <div class="text-4xl font-semibold">
+            <h1>Samnang Lath</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-4 text-lg font-medium">
+                <li><a href="#about" class="hover:text-pink-600">ABOUT ME</a></li>
+                <li><a href="#projects" class="hover:text-pink-600">RESUME</a></li>
+                <li><a href="#skills" class="hover:text-pink-600">GITHUB</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="https://www.linkedin.com/in/samnang-lath/" class="text-black-600 hover:text-pink-700"><i class="fab fa-linkedin-in text-3xl"></i></a>
+            <a href="mailto:samnanglath31@gmail.com" class="text-black-600 hover:text-pink-700 ml-4"><i class="fas fa-envelope text-3xl"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="flex items-center justify-between py-16 px-28">
+        <div class="max-w-lg">
+            <p class="text-lg font-light">
+                I am a software engineer who loves to make interactive web apps to solve interesting problems. I graduated with a Bachelor Degree in Computer Science major.
+            </p>
+            <p class="text-right font-medium mt-2">~Samnang</p>
+        </div>
+        <img src="resized_image.jpg" alt="error, could not load image" class="rounded-full border-4 border-pink-300">
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-28">
+            <h2 class="text-4xl font-bold mb-10">PROJECTS</h2>
+            <div class="flex flex-col items-center">
+            <div class="relative w-full max-w-6xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-10 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Data Analysis and Visualization Project | Python, NumPy, Matplotlib</h3>
+                <div class="flex items-center justify-between">
+                    <button id="prevButton" class="text-white text-3xl">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="imageCarousel" class="flex space-x-4">
+                        <!-- Carousel items -->
+                        <img src="https://ncbiinsights.ncbi.nlm.nih.gov/wp-content/uploads/2021/09/python_datascience.png" alt="" class="rounded-lg shadow-md image-item">
+                    </div>
+                    <button id="nextButton" class="text-white text-3xl">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <p class="text-lg font-light text-white mt-6">
+                    • Implemented a custom algorithm to compute yearly means, standard deviations, and specific probability metrics for sales data.
+                </p>
+                <p class="text-lg font-light text-white mt-3">
+                    • Utilized NumPy for efficient data handling and computations, demonstrating proficiency in array operations and statistical analysis. 
+                </p>
+                <p class="text-xg font-light text-white mt-3">
+                    • Applied logical and Boolean indexing techniques in NumPy to filter and process data based on specific criteria
+                </p>
+                <p class="text-lg font-light text-white mt-2">
+                    • Developed a data analysis project in Python, focusing on parsing, analyzing, and visualizing sales data from a CSV file
+                </p>
+                <p class="text-lg font-light text-white mt-2">
+                    • Showcased proficiency in creating informative and interactive histograms, enhancing the interpretability of complex data sets
+                </p>
+                <div class="absolute bottom-0 left-0 p-4 ">
+                    <span class="text-black font-bold">Samnang Lath</span>
+                </div>
+                <div class="flex space-x-10 mt-10 justify-center">
+                    <div class="text-center">
+                        <a href="your-backend-link" class=" hover:text-gray-900">
+                            <i class="fas fa-database fa-3x"></i>
+                            <p class="mt-2">Backend</p>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="your-backend-link" class="hover:text-gray-900">
+                            <i class="fas fa-laptop-code fa-3x"></i>
+                            <p class="mt-2">Frontend</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Employee Management System Backend Project -->
+    <section class="py-16 px-28">
+        <div class="flex flex-col items-center">
+            <div class="w-full max-w-6xl bg-gradient-to-r from-green-400 to-blue-500 p-10 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Employee Management System Backend| SpringBoot, Java, PostgreSQL</h3>
+                <div id="imageCarousel" class="flex space-x-4">
+                    <!-- Carousel items -->
+                    <img src="https://www.cutehr.io/wp-content/uploads/2020/05/employees-dashboard-cuteHR-1-1400x788.jpg" alt="" class="rounded-lg shadow-md image-item">
+                </div>
+                <p class="text-lg font-light text-white mt-3">
+                    • Developed a server-side application for managing employee data at a company, leveraging Java and Spring Boot with a focus on 
+object-oriented programming principles.
+                </p>
+                <p class="text-lg font-light text-white mt-3">
+                    • Implemented a secure payload encryption mechanism using Keycloak, enhancing the security of user data during transmission and
+                    storage
+                </p>
+                <p class="text-lg font-light text-white mt-3">
+                    • Designed efficient pagination and advanced search functionalities, including filtering by name and sorting, for optimized data 
+handling and user experience
+                </p>
+                <p class="text-lg font-light text-white mt-3">
+                    • Established a reliable PostgreSQL database connection, ensuring robust data management and integrity. 
+                </p>
+                <p class="text-lg font-light text-white mt-3">
+                    • Implemented Spring Security for role-based authentication and authorization, ensuring secure access to the system's resources.
+                </p>
+                <!-- Icons for Backend Technologies -->
+                <div class="flex space-x-10 mt-10 justify-center">
+                    <div class="text-center">
+                        <a href="your-backend-link" class=" hover:text-gray-900">
+                        <i class="fas fa-server fa-3x"></i>
+                        <p class="mt-2 text-white">Server</p>
+                        </a>
+                    </div>
+                <div class="text-center">
+                    <a href="your-backend-link" class=" hover:text-gray-900">
+                        <i class="fas fa-database fa-3x"></i>
+                        <p class="mt-2 text-white">Backend</p>
+                    </a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- PPS Company Static Website Project -->
+     <section class="py-16 px-28">
+        <div class="flex flex-col items-center">
+            <div class="w-full max-w-6xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">PPS Company Static Website</h3>
+                <div id="imageCarousel" class="flex space-x-4">
+                    <!-- Carousel items -->
+                    <img src="Capture.PNG" alt="" class="rounded-lg shadow-md image-item">
+                </div>
+                <p class="text-lg font-light text-white mt-5">
+                    A sleek and modern static website for PPS Company, showcasing their services and products. Built with ReactJS for a dynamic user experience, and styled using Tailwind CSS for a responsive and elegant design.
+                </p>
+                <!-- Icons for Technologies Used -->
+                <div class="flex space-x-10 mt-10 justify-center">
+                    <div class="text-center">
+                        <a href="your-backend-link" class=" hover:text-gray-900">
+                            <i class="fas fa-database fa-3x"></i>
+                            <p class="mt-2 text-white">GitHub</p>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://samnanglath12.netlify.app/" class=" hover:text-gray-900">
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                        <p class="mt-2 text-white">Website</p>
+                        <a href="your-backend-link" class=" hover:text-gray-900"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-28">
+        <div class="border-b-2 border-gray-200 mb-6">
+            <h2 class="text-4xl font-bold text-gray-800">SKILLS</h2>
+        </div>
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-auto">
+                <h3 class="text-2xl font-semibold text-gray-700">Backend: </h3>
+                <span class="text-xl text-gray-600">NodeJS, AWS Services, DynamoDB, Java, Spring Boot, MEAN stack, Google Guice, PostgreSQL, Python</spans>
+            </div>
+            <div class="w-full md:w-auto md:mt-0 mt-4">
+                <h3 class="text-2xl font-semibold text-gray-700">Frontend:</h3>
+                <p class="text-xl text-gray-600">Angular, TypeScript, HTML, CSS, Android SDK</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="flex justify-center items-center py-4 bg-pink-300">
+        <div class="space-x-4">
+            <a href="https://github.com" target="_blank" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="/resume.pdf" target="_blank" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-file fa-2x"></i>
+            </a>
+            <a href="mailto:email@example.com" class="text-gray-600 hover:text-gray-800">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <!-- Script for responsive navbar -->
+    <script>
+       const imageData = [
+    {
+      src: "https://ncbiinsights.ncbi.nlm.nih.gov/wp-content/uploads/2021/09/python_datascience.png",
+      alt: "Data Analysis Visualization",
+    },
+         { src:"https://cdn.sanity.io/images/tlr8oxjg/production/2d8450596e26adafc8e47e88a65bce42104b732a-1456x816.png?w=3840&q=80&fit=clip&auto=format", alt:"Placeholder image for movie poster Dune Part One"},
+         { src:"https://reflectivedata.com/wp-content/uploads/2017/04/FireShot-Capture-2-Acquisition-Ov__-https___analytics.google.com_analyt.png" , alt:"Placeholder image for movie poster Last Night in Soho"},
+         { src:"https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Visualization_in_Python/Data_Visualization_in_Python_7.png" ,alt:"Placeholder image for movie poster Army of Thieves" }
+    // ... add the rest of your images here
+  ];
+
+  let currentImageIndex = 0;
+
+  function updateCarousel() {
+    const carousel = document.getElementById('imageCarousel');
+    carousel.innerHTML = `<img src="${imageData[currentImageIndex].src}" alt="${imageData[currentImageIndex].alt}" class="rounded-lg shadow-md image-item">`;
+  }
+
+  document.getElementById('prevButton').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + imageData.length) % imageData.length;
+    updateCarousel();
+  });
+
+  document.getElementById('nextButton').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % imageData.length;
+    updateCarousel();
+  });
+
+  // Initialize the carousel with the first image
+  updateCarousel();
+    </script>
+</body>
+</html>
